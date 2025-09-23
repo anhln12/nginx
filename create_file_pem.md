@@ -1,7 +1,8 @@
 create_file_pem
 
-Open a text editor (such as wordpad) and paste the entire body of each certificate into one text file in the following order:
 
+Open a text editor (such as wordpad) and paste the entire body of each certificate into one text file in the following order:
+```
 The Private Key - your_domain_name.key
 The Primary Certificate - your_domain_name.crt
 The Intermediate Certificate - DigiCertCA.crt
@@ -20,3 +21,4 @@ Make sure to include the beginning and end tags on each certificate. The result 
 -----BEGIN CERTIFICATE-----
 (Your Root certificate: TrustedRoot.crt) ⇒ 2.intermediate.crt.cer
 -----END CERTIFICATE----
+```
